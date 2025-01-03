@@ -18,7 +18,7 @@ interface CartStore {
   total: number
 }
 
-export const useCartStore = create<CartStore>()(
+const useCartStore = create<CartStore>()(
   persist(
     (set, get) => ({
       items: [],
@@ -60,4 +60,6 @@ export const useCartStore = create<CartStore>()(
       name: 'cart-storage',
     }
   )
-) 
+)
+
+export default useCartStore 

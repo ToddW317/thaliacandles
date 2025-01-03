@@ -1,3 +1,5 @@
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -6,13 +8,11 @@ const nextConfig = {
     ],
   },
   typescript: {
-    // ⚠️ Warning: This allows production builds to successfully complete even if
-    // your project has type errors.
+    // Ignore all TS errors for now
     ignoreBuildErrors: true,
   },
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
+    // Ignore all ESLint errors for now
     ignoreDuringBuilds: true,
   },
   webpack: (config) => {

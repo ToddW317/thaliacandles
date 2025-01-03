@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { CartItem as CartItemType } from '@/store/cartStore'
-import { useCartStore } from '@/store/cartStore'
+import useCartStore from '@/store/cartStore'
 
 interface CartItemProps {
   item: CartItemType

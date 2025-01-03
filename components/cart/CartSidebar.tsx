@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import CartItem from './CartItem'
-import { useCartStore } from '@/store/cartStore'
+import useCartStore from '@/store/cartStore'
 
 export default function CartSidebar() {
   const { items, total, clearCart } = useCartStore()
